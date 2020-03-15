@@ -1,0 +1,7 @@
+介绍：这个项目是传统的SSM简单架构，没有用maven,利用log4j做了日志,前后端不分离
+
+tomcat启动后输入访问路径为http://localhost:8080/WebApp根据web.xml里面的配置去访问根目录下的index.html页面
+访问http://localhost:8080/WebApp/mvc/hello路径会根据springmvc-servlet.xml配置文件中配置的过滤器访问WEB-INF/jsp/hello.jsp
+service实现里面会加入日志的记录
+
+注意：项目启动的时候连接的mysql数据库需要配置成你自己本地的，需要自己手动创建一个表并插入数据，cfg包下提供了建表插入数据的SQL脚本
